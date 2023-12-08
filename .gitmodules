@@ -1,0 +1,9 @@
+[submodule "wrk2"]
+	path = wrk2
+	url = https://github.com/giltene/wrk2.git
+[submodule "wrk"]
+	path = wrk
+	url = https://github.com/wg/wrk.git
+[submodule "oha"]
+	path = oha
+	url = https://github.com/hatoo/oha.git
