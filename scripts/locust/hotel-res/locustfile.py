@@ -14,4 +14,5 @@ class HelloWorldUser(HttpUser):
     @task
     def user_login(self):
         username, password = self.generate_user_password()
-        self.client.post("/user",  {"username":username, "password":password})
+        with self.client.rename_request("/user_login"):
+            self.client.post(f"/user?username={username}&password={password}")
